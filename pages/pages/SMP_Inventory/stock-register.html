@@ -30,7 +30,7 @@
     <!-- =================q==============================-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
-    <link href="../../assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
 
   </head>
 
@@ -47,7 +47,7 @@
 
 
 
-       <nav class="navbar navbar-vertical navbar-expand-xl navbar-light navbar-glass"><a class="navbar-brand text-left" href="index.html">
+      <nav class="navbar navbar-vertical navbar-expand-xl navbar-light navbar-glass"><a class="navbar-brand text-left" href="index.html">
             <div class="d-flex align-items-center py-3"><span class="text-sans-serif">INVENTORY</span>
             </div>
           </a>
@@ -173,7 +173,7 @@
             <div class="card-header">
               <div class="row align-items-center justify-content-between">
                 <div class="col-6 col-sm-auto d-flex align-items-center pr-0">
-                  <h5 class="fs-0 mb-0 text-nowrap py-2 py-xl-0">ADC Estate - Stock Register </h5>
+                  <h5 class="fs-0 mb-0 text-nowrap py-2 py-xl-0">Stock Register</h5>
                 </div>
                 <div class="col-6 col-sm-auto ml-auto text-right pl-0">
                   <div class="d-none" id="purchases-actions">
@@ -193,22 +193,23 @@
                     <form class="d-inline-block mr-3">
                     <div class="input-group input-group-sm d-flex align-items-center"><small class="mr-1">Select Team Wise : </small>
                       <select class="custom-select" aria-label="Bulk actions">
-                        <option selected="">Select</option>
+                        <option value="Refund">All Departments </option>
                         <option value="Refund">ADC Estate </option>
                         <option value="Refund">ADC (Finance)</option>
                         <option value="Refund">DC (HQ)</option>
                         <option value="Delete">ADC (HQ)</option>
                         <option value="Delete">AC <HQ></HQ></option>
                       </select>
-                      </form>
-                    </div>
-                  
-                    
                     <button class="btn btn-falcon-default btn-sm" type="button"><span class="fas fa-external-link-alt" data-fa-transform="shrink-3 down-2"></span><span class="d-none d-sm-inline-block ml-1">Export</span></button>
+                    <button class="btn btn-falcon-default btn-sm mx-2" type="button"><span class="fas fa-print" data-fa-transform="shrink-3 down-2"></span><span class="d-none d-sm-inline-block ml-1">Print</span></button>
+                    </div>
+                  </form>
                   </div>
                 </div>
               </div>
             </div>
+
+            
             <div class="card-body p-0">
               <div class="table-responsive">
                 <table class="table table-sm mb-0 table-dashboard fs--1">
@@ -218,9 +219,10 @@
                         
                       </th>
                       
-                      <th>Item Name</th>
+                      <th>Serial No</th>
+                      <th>Category</th>
+                      <th>Model</th>
                       <th>Unit</th>
-                      <th>Receive Date</th>
                      
                       
                       <th class="text-left">More</th>
@@ -232,10 +234,10 @@
                       <td class="align-middle">
                                               </td>
                       
-                   
-                       <td class="align-middle"><a href="single-work-order.html">Autobe Chair</td>
+                      <td class="align-middle">01</td>
+                       <td class="align-middle">Autobe Chair</td>
                        <td class="align-middle">C27H</td>
-                      <td class="align-middle">12-07-19</td>
+                      <td class="align-middle">12</td>
                       
                       
                       </td>
@@ -256,9 +258,10 @@
                       <td class="align-middle">
                                               </td>
                      
-                       <td class="align-middle"><a href="single-work-order.html">Autobe Computer Desk</td>
+                       <td class="align-middle">02</td>
+                       <td class="align-middle">Autobe Computer Desk</td>
                        <td class="align-middle">CD21</td>
-                      <td class="align-middle">13-07-19</td>
+                      <td class="align-middle">09</td>
                      
                       </td>
                       
@@ -278,9 +281,10 @@
                       <td class="align-middle">
                                               </td>
                       
-                      <td class="align-middle"><a href="single-work-order.html">Walton Fridge</td>
+                      <td class="align-middle">03</td>
+                       <td class="align-middle">Walton Fridge</td>
                        <td class="align-middle">OD14</td>
-                      <td class="align-middle">14-07-19</td>
+                      <td class="align-middle">06</td>
                       
                       </td>
                       
@@ -300,13 +304,12 @@
                     <tr class="btn-reveal-trigger">
                       <td class="align-middle">
                                               </td>
-                      
-                   
-                       <td class="align-middle"><a href="single-work-order.html"> Sony Tv</td>
+                     
+                       <td class="align-middle">04</td>
+                       <td class="align-middle">Sony Tv</td>
                        <td class="align-middle">D212</td>
-                      <td class="align-middle">14-07-19</td>
-                      
-                      
+                      <td class="align-middle">03</td>
+                     
                       </td>
                       
                       <td class="align-middle white-space-nowrap">
@@ -321,14 +324,15 @@
                       </td>
                     </tr>
 
-                    <tr class="btn-reveal-trigger">
+                     <tr class="btn-reveal-trigger">
                       <td class="align-middle">
                                               </td>
                      
-                       <td class="align-middle"><a href="single-work-order.html"> Del Laptop</td>
+                       <td class="align-middle">05</td>
+                       <td class="align-middle">Del Laptop</td>
                        <td class="align-middle">C27H</td>
-                      <td class="align-middle">15-07-19</td>
-                     
+                      <td class="align-middle">20</td>
+                      
                       </td>
                       
                       <td class="align-middle white-space-nowrap">
@@ -343,14 +347,15 @@
                       </td>
                     </tr>
 
-                    <tr class="btn-reveal-trigger">
+                     <tr class="btn-reveal-trigger">
                       <td class="align-middle">
                                               </td>
-                      
-                      <td class="align-middle"><a href="single-work-order.html">Samsung Monitor</td>
+                     
+                      <td class="align-middle">06</td>
+                       <td class="align-middle">Samsung Monitor</td>
                        <td class="align-middle">CD21</td>
-                      <td class="align-middle">16-07-19</td>
-                      
+                      <td class="align-middle">16</td>
+                    
                       </td>
                       
                       <td class="align-middle white-space-nowrap">
@@ -365,16 +370,15 @@
                       </td>
                     </tr>
 
-                    <tr class="btn-reveal-trigger">
+                     <tr class="btn-reveal-trigger">
                       <td class="align-middle">
                                               </td>
-                      
-                   
-                       <td class="align-middle"><a href="single-work-order.html">5 Star Fan </td>
+                     
+                     <td class="align-middle">07</td>
+                       <td class="align-middle">5 Star Fan</td>
                        <td class="align-middle">OD14</td>
-                      <td class="align-middle">16-07-19</td>
-                      
-                      
+                      <td class="align-middle">12</td>
+                     
                       </td>
                       
                       <td class="align-middle white-space-nowrap">
@@ -389,13 +393,176 @@
                       </td>
                     </tr>
 
-                    <tr class="btn-reveal-trigger">
+                     <tr class="btn-reveal-trigger">
                       <td class="align-middle">
                                               </td>
                      
-                       <td class="align-middle"><a href="single-work-order.html">Phillips Bulb</td>
+                      <td class="align-middle">08</td>
+                       <td class="align-middle">Phillips Bulb</td>
                        <td class="align-middle">D212</td>
-                      <td class="align-middle">17-07-19</td>
+                      <td class="align-middle">08</td>
+                     
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                      <td class="align-middle">09</td>
+                       <td class="align-middle">Metador Ballpen</td>
+                       <td class="align-middle">C27H</td>
+                      <td class="align-middle">04</td>
+                      
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                      <td class="align-middle">10</td>
+                       <td class="align-middle">Walton Fridge</td>
+                       <td class="align-middle">CD21</td>
+                      <td class="align-middle">20</td>
+            
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                      <td class="align-middle">11</td>
+                       <td class="align-middle">Sony Tv</td>
+                       <td class="align-middle">OD14</td>
+                      <td class="align-middle">15</td>
+               
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                     <td class="align-middle">12</td>
+                       <td class="align-middle">Autobe Chair</td>
+                       <td class="align-middle">D212</td>
+                      <td class="align-middle">10</td>
+                   
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                      <td class="align-middle">13</td>
+                       <td class="align-middle">Autobe Computer Desk</td>
+                       <td class="align-middle">C27H</td>
+                      <td class="align-middle">05</td>
+                   
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                   <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                      
+                      <td class="align-middle">01</td>
+                       <td class="align-middle">Autobe Chair</td>
+                       <td class="align-middle">C27H</td>
+                      <td class="align-middle">12</td>
+                      
+                      
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                       <td class="align-middle">02</td>
+                       <td class="align-middle">Autobe Computer Desk</td>
+                       <td class="align-middle">CD21</td>
+                      <td class="align-middle">09</td>
                      
                       </td>
                       
@@ -415,9 +582,10 @@
                       <td class="align-middle">
                                               </td>
                       
-                      <td class="align-middle"><a href="single-work-order.html">Autobe Chair</td>
-                       <td class="align-middle">C27H</td>
-                      <td class="align-middle">20-07-19</td>
+                      <td class="align-middle">03</td>
+                       <td class="align-middle">Walton Fridge</td>
+                       <td class="align-middle">OD14</td>
+                      <td class="align-middle">06</td>
                       
                       </td>
                       
@@ -432,6 +600,76 @@
                         </div>
                       </td>
                     </tr>
+
+
+                    <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                       <td class="align-middle">04</td>
+                       <td class="align-middle">Sony Tv</td>
+                       <td class="align-middle">D212</td>
+                      <td class="align-middle">03</td>
+                     
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                     <tr class="btn-reveal-trigger">
+                      <td class="align-middle">
+                                              </td>
+                     
+                       <td class="align-middle">05</td>
+                       <td class="align-middle">Del Laptop</td>
+                       <td class="align-middle">C27H</td>
+                      <td class="align-middle">20</td>
+                      
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                     <tr class="btn-reveal-trigger">
+                      <td class="align-middle"></td>
+                      <td class="align-middle">06</td>
+                      <td class="align-middle">Samsung Monitor</td>
+                      <td class="align-middle">CD21</td>
+                      <td class="align-middle">16</td>
+                    
+                      </td>
+                      
+                      <td class="align-middle white-space-nowrap">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal mr-3" type="button" id="dropdown1" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown1">
+                            <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Roaster</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+
 
 
 

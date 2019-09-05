@@ -29,8 +29,10 @@
     <!--    Stylesheets-->
     <!-- =================q==============================-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="../../assets/lib/select2/select2.min.css" rel="stylesheet">
+    <link href="../../assets/lib/flatpickr/flatpickr.min.css" rel="stylesheet">
     <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
-    <link href="../../assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
 
   </head>
 
@@ -122,8 +124,6 @@
 
 
 
-
-
         
 
 
@@ -168,137 +168,71 @@
               </ul>
             </div>
           </nav>
-
-          <div class="card mb-3">
-            <div class="card-body">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-md">
-                  <h5 class="mb-2 mb-md-0">Work Order #P212420</h5>
-                </div>
-                <div class="col-auto">
-                  <button class="btn btn-falcon-default btn-sm mr-2 mb-2 mb-sm-0" type="button"><span class="fas fa-arrow-down mr-1"> </span>Download (.pdf)</button>
-                  <button class="btn btn-falcon-default btn-sm mr-2 mb-2 mb-sm-0" type="button"><span class="fas fa-print mr-1"> </span>Print</button>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
           
-
-          
-
-
-
-          
-          <div class="card mb-3">
-            <div class="card-body">
-              <div class="row align-items-center text-center mb-3">
-                <div class="col-sm-6 text-sm-left"><img src="../../assets/img/illustrations/smp.png" alt="invoice" width="150"></div>
-                <div class="col text-sm-right mt-3 mt-sm-0">
-                  <h2 class="mb-3">Work Order</h2>
-                  <h5>Sylhet Metropolitan Police</h5>
-                  <p class="fs--1 mb-0">Kumarpara rd, Sylhet<br>Bangladesh</p>
-                </div>
-                <div class="col-12">
-                  <hr>
-                </div>
-              </div>
-              <div class="row justify-content-between align-items-center">
-                <div class="col">
-                  
-                  <h5>Ryan Electornics</h5>
-                  <p class="fs--1 fs-0">Work Order Reference Number - P212420 <br>Date - 22 / 07 / 2019</p>
-                  
-                </div>
-                <div class="col-sm-auto ml-auto">
-                  <div class="table-responsive">
-                    <table class="table table-sm table-borderless fs--1">
-                      <tbody>
-                        <tr>
-                          <th class="text-sm-right">Address:</th>
-                          <td>Zindabazar, Sylhet</td>
-                        </tr>
-                        
-                        <tr>
-                          <th class="text-sm-right">Order Date:</th>
-                          <td>16-07-19</td>
-                        </tr>
-                        <tr>
-                          <th class="text-sm-right">Receive Date:</th>
-                          <td>20-07-19</td>
-                        </tr>
-                       
-                        
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="table-responsive mt-4 fs--1">
-                <table class="table table-striped border-bottom">
-                  <thead>
-                    <tr class="bg-primary text-white">
-                      <th class="border-0">Item Name</th>
-                      <th class="border-0 text-center">Item Category</th>
-                      <th class="border-0 text-center">Description / Model</th>
-                       <td class="align-middle text-center">Unit</td>
-                      
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="align-middle">
-                      <h6 class="mb-0 text-nowrap">Computer Chair</h6></td>
-                      <td class="align-middle text-center">Autobe Chair</td>
-                        <td class="align-middle text-center">C27H</td>
-                        <td class="align-middle text-center">4</td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <h6 class="mb-0 text-nowrap">Fridge</h6>
-                      </td>
-                      <td class="align-middle text-center">Walton Fridge</td>
-                       <td class="align-middle text-center">CD21</td>
-                       <td class="align-middle text-center">2</td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <h6 class="mb-0 text-nowrap">Computer Desk</h6>
-                      </td>
-                      <td class="align-middle text-center">Hatil Computer Desk</td>
-                       <td class="align-middle text-center">TF12</td>
-                       <td class="align-middle text-center">8</td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">
-                        <h6 class="mb-0 text-nowrap">Desktop Monitor</h6>
-                      </td>
-                      <td class="align-middle text-center">Samsung Monitor</td>
-                       <td class="align-middle text-center">DM36</td>
-                       <td class="align-middle text-center">10</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              
-            </div>
-            <div class="card-footer bg-light">
-              <p class="fs--1 mb-0"><strong>Notes: </strong>We really appreciate your business and if there’s anything else we can do, please let us know!</p>
-            </div>
-          </div>
          
+          <div class="row no-gutters">
+            <div class="col-lg-12 pr-lg-2">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h5 class="mb-0">Add New Team</h5>
+                </div>
+                <div class="card-body bg-light">
+                  <form>
+                    <div class="form-row">
+
+                          <div class="col-12">
+                        <div class="form-group">
+                          <label for="event-name">Team Title</label>
+                          <input class="form-control" id="event-name" type="text" placeholder="Add Name">
+                        </div>
+                      </div>
+
+
+                      
+
+                     <div class="col-sm-12 mt-3">
+                        <div class="form-group">
+                          <label for="start-date">Team Lead</label>
+                            <input class="form-control" id="event-name" type="text" placeholder="Add Name">
+                        </div>
+                      </div>
+
+
+                      
+
+
+                      <div class="col-sm-6 mt-3">
+                        <div class="form-group row d-flex align-items-center no-gutters">
+                          <div class="col pr-2" >
+                            <label for="start-time">Team Members</label>
+                            <input class="form-control" id="event-name" type="text" placeholder="Add Name">
+                          </div>
+                          
+                          <div class="col-auto">
+                            <button class="btn btn-falcon-default btn-sm mt-4 ml-1" type="button"><span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span><span class="d-none d-sm-inline-block ml-1">Add New Member</span></button>
+                          </div>
+                        </div>
+                      </div>
+
+                       
+
+                      <div class="col-12">
+                        <hr class="border-dashed border-bottom-0">
+                      </div>
+                      
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="event-description">Description</label>
+                          <textarea class="form-control" id="event-description" rows="6"> </textarea>
+                        </div>
+                        <div class="text-right">
+                        <button class="btn btn-primary btn-sm mr-2" role="button">Save</button></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
           
-
-
-
-
-
-
-
-
-
-            
-
           <footer>
             <div class="row no-gutters justify-content-between fs--1 mt-4 mb-3">
               <div class="col-12 col-sm-auto text-center">
@@ -329,6 +263,8 @@
     <script src="../../assets/lib/sticky-kit/sticky-kit.min.js"></script>
     <script src="../../assets/lib/is_js/is.min.js"></script>
     <script src="../../assets/lib/@fortawesome/all.min.js"></script>
+    <script src="../../assets/lib/select2/select2.min.js"></script>
+    <script src="../../assets/lib/flatpickr/flatpickr.min.js"></script>
     <script src="../../assets/lib/chart.js/Chart.min.js"></script>
     <script src="../../assets/lib/jqvmap/jquery.vmap.js"></script>
     <script src="../../assets/lib/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
